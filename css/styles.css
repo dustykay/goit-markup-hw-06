@@ -867,3 +867,302 @@ button {
 }
 
 /* #endregion modal links and button */
+
+/* #region adaptability Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 288px;
+    padding: 0;
+  }
+
+  header .logo.header-logo {
+    padding: 16px 0;
+    margin: 0;
+  }
+
+  .header-burger {
+    margin-left: auto;
+  }
+
+  .nav-list,
+  .header-address {
+    display: none;
+  }
+
+  /* === Hero === */
+  .hero {
+    padding: 72px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg@hero-bg2x.webp);
+  }
+
+  .main-title {
+    font-size: 36px;
+    line-height: 111%;
+    width: 216px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+
+  /* === Benefits === */
+  .benefits-list {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .benefits-icon-wrapper {
+    display: none;
+  }
+
+  .benefits-list-item {
+    width: 264px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .benefits-list-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .benefits-list-text {
+    width: 264px;
+    text-align: left;
+  }
+
+  /* === Team === */
+  .team-list {
+    flex-direction: column;
+    row-gap: 72px;
+  }
+
+  .team-list-item {
+    width: 264px;
+    margin: 0 auto;
+  }
+
+  /* === Portfolio === */
+  .portfolio-list {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+
+  .portfolio-list-item {
+    width: 288px;
+  }
+
+  /* === Footer === */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 72px;
+  }
+
+  .footer-wrapper {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .footer-text {
+    width: 288px;
+    text-align: left;
+  }
+
+  .social-media-title,
+  .subscribe-title {
+    text-align: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+
+  .subscribe {
+    margin: 0;
+  }
+
+  .footer {
+    padding: 96px 0;
+  }
+
+  /* === Modal === */
+  .modal {
+    width: 288px;
+    padding: 72px 16px 33px;
+  }
+
+  .modal-overlay {
+    overflow-x: hidden;
+  }
+
+  .user-privacy {
+    font-size: 12px;
+  }
+
+  /* === Mobile Menu === */
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-menu {
+    padding: 72px 153px 0 0;
+  }
+
+  .nav-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+  }
+
+  .menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2e2f42;
+  }
+
+  .menu-list-link {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .social-buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .social-icon-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    fill: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms ease;
+  }
+
+  .social-icon-item:hover,
+  .social-icon-item:focus {
+    background-color: #404bbf;
+  }
+}
+
+/* #endregion adaptability Mobile */
+
+/* #region adaptibility Tablet */
+@media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 736px;
+    padding: 0;
+  }
+
+  .burger-button {
+    display: none;
+  }
+
+  .address-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .address-list-link {
+    padding: 16px;
+  }
+
+  .hero {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .benefits-list {
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .benefits-icon-wrapper {
+    display: none;
+  }
+
+  .benefits-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-list-item {
+    width: 264px;
+  }
+
+  .portfolio-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-list-item {
+    width: 356px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    padding-left: 108px;
+  }
+
+  .footer-wrapper {
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .subscribe {
+    margin-left: 0;
+  }
+}
+
+/* #endregion adaptibility Tablet */
+
+@media (min-width: 1158px) {
+  .burger-button {
+    display: none;
+  }
+}
